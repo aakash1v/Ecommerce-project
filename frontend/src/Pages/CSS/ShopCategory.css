@@ -1,0 +1,111 @@
+.shop-category-banner{
+    display: block;
+    width: 82%;
+    margin: 30px auto;
+}
+
+.shop-category-indexSort{
+    display: flex;
+    margin: 0px 17px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-category-sort{
+    padding: 10px 2;
+    border-radius: 40pc;
+    border: 1px solid #888;
+}
+.shop-category-indexSort p span{
+    font-weight: 600;
+}
+.shop-category-products{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    row-gap: 80px;
+
+}
+.shop-category-products div{
+    width: 100%;
+}
+.shop-category-products img{
+    width: 100%;
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 233px;
+    height: 70px;
+    border-radius: 75px;
+    color: #787878;
+    background: #ededed;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1280px) {
+    
+    .shop-category-banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .shop-category-indexSort{
+        width: 90%;
+        margin: auto;
+    }
+    .shop-category-sort{
+        padding:5px 10px ;
+        font-size: 12px;
+    }
+    .shop-category-indexSort p{
+        font-size: 12px;
+    }
+    .shop-category-products{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+    .shop-category-banner{
+        width: 95%;
+    }
+    .shop-category-indexSort{
+        width: 95%;
+        margin: auto;
+    }
+    .shop-category-sort{
+        padding:5px 10px ;
+        font-size: 12px;
+    }
+    .shop-category-indexSort p{
+        font-size: 12px;
+    }
+    .shop-category-products{
+        width: 95%;
+        margin: 10px auto;
+    }
+    .shopcategory-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 500px){
+    .shop-category-products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
