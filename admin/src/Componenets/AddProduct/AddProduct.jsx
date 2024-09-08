@@ -41,9 +41,9 @@ const AddProduct = () => {
             console.log(product)
             await fetch('http://localhost:4000/addproduct', {
                 method: 'POST',
-                header:{
+                headers:{
                     Accept: 'application/json',
-                    'Content_Type': 'application/json',
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(product),
             }).then((resp)=> resp.json()).then((data)=> {
